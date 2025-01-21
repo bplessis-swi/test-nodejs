@@ -10,6 +10,7 @@ app.get('/', (req, res) => {
   const numbers = _.range(1, 6);
   const squared = _.map(numbers, n => n * n);
   
+  // test
   res.json({
     message: "Hello from CI Cache Test!",
     time: currentTime,
