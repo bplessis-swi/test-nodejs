@@ -17,7 +17,7 @@ jobs:
           node-version: 20
           cache: 'npm'
           cache-dependency-path: package-lock.json
-      - run: ls -l
+      - run: ls -la /home/runner/work/test-nodejs/test-nodejs/
       - run: ls -la node_modules/
-      - run: npm ci
+      - run: npm ci --loglevel verbose.
       - run: npm test
